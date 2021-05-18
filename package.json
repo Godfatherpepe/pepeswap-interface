@@ -1,6 +1,6 @@
 {
-  "name": "@bscswap/interface",
-  "description": "BSCswap Interface",
+  "name": "@pepeswap/interface",
+  "description": "Pepeswap Interface",
   "homepage": ".",
   "private": true,
   "devDependencies": {
@@ -99,5 +99,6 @@
       "last 1 safari version"
     ]
   },
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "dependencies": {}
 }

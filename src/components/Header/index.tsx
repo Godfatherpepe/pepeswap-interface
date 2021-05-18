@@ -21,7 +21,9 @@ import Web3Status from '../Web3Status'
 const Nav: React.FC = () => {
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink>  
+      <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://gov.plutopepe.com" target="_blank">Governance</StyledAbsoluteLink>
+      <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink>   
     </StyledNav>
   )
 }
@@ -38,15 +40,15 @@ const StyledNav = styled.nav`
 `
 
 const StyledAbsoluteLink = styled.a`
-  color: #000000;
+  color: #ffffff;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
   &:hover {
-    color: #FFBB00;
+    color: #FACB34;
   }
   &.active {
-    color: #FFBB00;
+    color: #FACB34;
   }
   @media (max-width: 400px) {
     padding-left: 10px;
@@ -169,7 +171,7 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 80, width:300, marginTop:-10 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ height: 60, width:100, marginTop:-10 }} src={isDark ? LogoDark : Logo} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>

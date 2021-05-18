@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import { BookOpen, Code, PieChart, MessageCircle, Send, CheckCircle } from 'react-feather'
+import { Info, BookOpen, Code, PieChart, MessageCircle, Send, CheckCircle } from 'react-feather'
 import styled from 'styled-components'
 import { ReactComponent as MenuIcon } from '../../assets/images/menu.svg'
 import useToggle from '../../hooks/useToggle'
@@ -80,7 +80,7 @@ const MenuItem = styled(ExternalLink)`
   }
 `
 
-const CODE_LINK = 'https://github.com/bscswap/contracts'
+const CODE_LINK = 'https://github.com'
 
 export default function Menu() {
   const node = useRef<HTMLDivElement>()
@@ -114,49 +114,33 @@ export default function Menu() {
       </StyledMenuButton>
       {chainId && open && (
         <MenuFlyout>
-          <MenuItem id="link" href={getAnalysisLink(chainId)}>
-            <PieChart size={14} />
-            {t('analytics')}
+          <MenuItem id="link" href="https://www.plutopepe.com/">
+            <Info size={14} />
+            {t('About')}
           </MenuItem>
-          <MenuItem id="link" href="https://twitter.com/bscswapprotocol">
+          <MenuItem id="link" href="https://twitter.com/PlutoPepe">
             <Send size={14} />
             Twitter
           </MenuItem>
-          <MenuItem id="link" href="https://t.me/bscswap">
+          <MenuItem id="link" href="https://t.me/plutopepe">
             <Send size={14} />
             {t('telegram')}
           </MenuItem>
-          <MenuItem id="link" href="https://discord.gg/mCZSA3w">
+          <MenuItem id="link" href="https://discord.gg/">
             <MessageCircle size={14} />
             {t('discord')}
-          </MenuItem>
-          <MenuItem id="link" href="https://bscswap.com/WeChat.jpg">
-            <MessageCircle size={14} />
-            WeChat
           </MenuItem>
           <MenuItem id="link" href={CODE_LINK}>
             <Code size={14} />
             {t('code')}
           </MenuItem>
-          <MenuItem id="link" href="https://medium.com/@bscswapprotocol">
-            <BookOpen size={14} />
-            Medium
-          </MenuItem>
-          <MenuItem id="link" href="https://dappradar.com/binance-smart-chain/exchanges/bscswap">
-            <CheckCircle size={14} />
-            DappRadar
-          </MenuItem>
-          <MenuItem id="link" href="https://www.coingecko.com/en/exchanges/bscswap">
-            <CheckCircle size={14} />
-            CoinGecko
-          </MenuItem>
-          <MenuItem id="link" href="https://coinmarketcap.com/exchanges/bscswap">
+          <MenuItem id="link" href="https://coinmarketcap.com/currencies/plutopepe/">
             <CheckCircle size={14} />
             CoinMarketCap
           </MenuItem>
-          <MenuItem id="link" href={getEtherscanLink(chainId, '0xd954551853F55deb4Ae31407c423e67B1621424A', 'address')}>
+          <MenuItem id="link" href={getEtherscanLink(chainId, '0x0C3Ea5aAC39101E5b3989b3f19181D8591b734d0', 'address')}>
             <BookOpen size={14} />
-            {t('bscscancontract')}
+            {t('Contract')}
           </MenuItem>
         </MenuFlyout>
       )}

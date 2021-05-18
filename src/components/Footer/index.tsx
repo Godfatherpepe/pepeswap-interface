@@ -133,9 +133,6 @@ const BinanceLogoLink = styled.a`
 `
 
 const FooterBody = styled.div`
-    display:block;
-    margin: 8px;
-    width:99%;
     position: fixed;
     left: 0;
     bottom: 0;

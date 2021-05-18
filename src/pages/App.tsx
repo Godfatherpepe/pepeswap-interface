@@ -3,8 +3,8 @@ import { HashRouter, Route, Switch } from 'react-router-dom'
 import styled from 'styled-components'
 import GoogleAnalyticsReporter from '../components/analytics/GoogleAnalyticsReporter'
 import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Popups from '../components/Popups'
+import Background from '../assets/images/background.png'
 import Web3ReactManager from '../components/Web3ReactManager'
 import DarkModeQueryParamReader from '../theme/DarkModeQueryParamReader'
 import AddLiquidity from './AddLiquidity'
@@ -40,7 +40,7 @@ const BodyWrapper = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding-top: 160px;
+  padding-top: 120px;
   align-items: center;
   flex: 1;
   overflow-y: auto;
@@ -55,11 +55,12 @@ const BodyWrapper = styled.div`
 `
 
 const Marginer = styled.div`
-  margin-top: 5rem;
+  margin-top: 0rem;
 `
 
 export default function App() {
   return (
+    <div style={{ backgroundImage: `url(${Background})` }}>
     <Suspense fallback={null}>
       <HashRouter>
         <Route component={GoogleAnalyticsReporter} />
@@ -90,11 +91,11 @@ export default function App() {
               </Switch>
             </Web3ReactManager>
             <Marginer />
-          </BodyWrapper>
-          <Footer />  
+          </BodyWrapper> 
         </AppWrapper>
       </HashRouter>
     </Suspense>
+    </div>
 
   )
 }
