@@ -2,6 +2,8 @@ import { ChainId } from '@bscswap/sdk'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
+import { darken } from 'polished'
+import { NavLink, Link as HistoryLink } from 'react-router-dom'
 
 import styled from 'styled-components'
 
@@ -10,6 +12,7 @@ import LogoDark from '../../assets/images/logo_white.png'
 import { useActiveWeb3React } from '../../hooks'
 import { useDarkModeManager } from '../../state/user/hooks'
 import { useETHBalances } from '../../state/wallet/hooks'
+import { useTranslation } from 'react-i18next'
 
 import { YellowCard } from '../Card'
 import Settings from '../Settings'
@@ -19,14 +22,20 @@ import { RowBetween } from '../Row'
 import Web3Status from '../Web3Status'
 
 const Nav: React.FC = () => {
+
+  const { t } = useTranslation()
+
   return (
     <StyledNav>
       <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink>
+      { /* <StyledNavLink to={'/coinflip'}>Coin Flip</StyledNavLink> */ } 
       <StyledAbsoluteLink href="https://gov.plutopepe.com" target="_blank">Governance</StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink>   
+      <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink> 
     </StyledNav>
   )
 }
+
+const activeClassName = 'ACTIVE'
 
 const StyledNav = styled.nav`
   align-items: center;
@@ -38,6 +47,25 @@ const StyledNav = styled.nav`
     display: none;
   }
 `
+
+const StyledNavLink = styled(NavLink).attrs({
+  activeClassName
+})`
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  &:hover {
+    color: #FACB34;
+  }
+  &.active {
+    color: #FACB34;
+  }
+  @media (max-width: 400px) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  `
 
 const StyledAbsoluteLink = styled.a`
   color: #ffffff;
@@ -171,7 +199,7 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 60, width:100, marginTop:-10 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ height: 70, width: 70, marginTop:-15 }} src={isDark ? LogoDark : Logo} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>
