@@ -3,7 +3,7 @@ import { ChainId, JSBI, Percent, Token, WETH } from '@bscswap/sdk'
 
 import { injected, binanceinjected, walletconnect, walletlink } from '../connectors'
 
-export const ROUTER_ADDRESS = '0xd954551853F55deb4Ae31407c423e67B1621424A'
+export const ROUTER_ADDRESS = '0x5FDC949435b656bAEcb7c6f1405768D5Be15Ca8F'
 
 // a list of tokens by chain
 type ChainTokenList = {
@@ -160,4 +160,4 @@ export const MIN_ETH: JSBI = JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(16))
 export const BETTER_TRADE_LINK_THRESHOLD = new Percent(JSBI.BigInt(75), JSBI.BigInt(10000))
 
 // the Uniswap Default token list lives here
-export const DEFAULT_TOKEN_LIST_URL = 'https://francis-song.github.io/test-default-token-list/src/tokenlist.json'
+export const DEFAULT_TOKEN_LIST_URL = 'https://francis-song.github.io/test-default-token-list/src/tokenlists.json'
