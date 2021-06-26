@@ -30,6 +30,7 @@ const Nav: React.FC = () => {
       <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink>
       { /* <StyledNavLink to={'/coinflip'}>Coin Flip</StyledNavLink> */ } 
       <StyledAbsoluteLink href="https://gov.plutopepe.com" target="_blank">Governance</StyledAbsoluteLink>
+      <StyledNavLink to={'/farms'}>Farms</StyledNavLink>
       <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink> 
     </StyledNav>
   )
