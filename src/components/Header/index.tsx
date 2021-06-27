@@ -27,10 +27,10 @@ const Nav: React.FC = () => {
 
   return (
     <StyledNav>
-      <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink>
+      { /* <StyledAbsoluteLink href="https://pepeswap.org/#/swap" className="active">Swap</StyledAbsoluteLink> */ }
       { /* <StyledNavLink to={'/coinflip'}>Coin Flip</StyledNavLink> */ } 
-      <StyledAbsoluteLink href="https://gov.plutopepe.com" target="_blank">Governance</StyledAbsoluteLink>
-      <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink> 
+      { /* <StyledAbsoluteLink href="https://gov.plutopepe.com" target="_blank">Governance</StyledAbsoluteLink> */ }
+      { /* <StyledAbsoluteLink href="https://pepeswap.org/#/" target="_blank">Charts</StyledAbsoluteLink> */ }
     </StyledNav>
   )
 }
@@ -51,7 +51,7 @@ const StyledNav = styled.nav`
 const StyledNavLink = styled(NavLink).attrs({
   activeClassName
 })`
-  color: #ffffff;
+  color: #000000;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
@@ -68,7 +68,7 @@ const StyledNavLink = styled(NavLink).attrs({
   `
 
 const StyledAbsoluteLink = styled.a`
-  color: #ffffff;
+  color: #000000;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
@@ -199,7 +199,7 @@ export default function Header() {
         <HeaderElement>
           <Title href=".">
             <UniIcon>
-              <img style={{ height: 70, width: 70, marginTop:-15 }} src={isDark ? LogoDark : Logo} alt="logo" />
+              <img style={{ height: 160, width: 160, marginTop: -60 }} src={isDark ? LogoDark : Logo} alt="logo" />
             </UniIcon>
           </Title>
         </HeaderElement>

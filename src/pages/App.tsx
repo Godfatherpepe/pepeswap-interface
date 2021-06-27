@@ -61,7 +61,7 @@ const Marginer = styled.div`
 
 export default function App() {
   return (
-    <div style={{ backgroundImage: `url(${Background})` }}>
+  // <div style={{ backgroundImage: `url(${Background})` }}>
     <Suspense fallback={null}>
       <HashRouter>
         <Route component={GoogleAnalyticsReporter} />
@@ -97,7 +97,7 @@ export default function App() {
         </AppWrapper>
       </HashRouter>
     </Suspense>
-    </div>
+    // </div>
 
   )
 }
