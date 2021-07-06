@@ -1,4 +1,4 @@
-import { CurrencyAmount, ETHER, JSBI } from '@bscswap/sdk'
+import { CurrencyAmount, ETHER, JSBI } from '@pepe-swap-libs/sdk'
 import { MIN_ETH } from '../constants'
 
 /**

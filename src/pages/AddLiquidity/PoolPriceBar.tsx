@@ -1,4 +1,4 @@
-import { Currency, Percent, Price } from '@bscswap/sdk'
+import { Currency, Percent, Price } from '@pepe-swap-libs/sdk'
 import React, { useContext } from 'react'
 import { Text } from 'rebass'
 import { ThemeContext } from 'styled-components'

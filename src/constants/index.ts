@@ -1,7 +1,7 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { ChainId, JSBI, Percent, Token, WETH } from '@bscswap/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@pepe-swap-libs/sdk'
 
-import { injected, binanceinjected, walletconnect, walletlink } from '../connectors'
+import { injected, binanceinjected } from '../connectors'
 
 export const ROUTER_ADDRESS = '0x4993174ee0CDa4A3E028007BE8c38F19e1e31337'
 

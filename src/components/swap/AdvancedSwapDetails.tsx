@@ -1,4 +1,4 @@
-import { Trade, TradeType } from '@bscswap/sdk'
+import { Trade, TradeType } from '@pepe-swap-libs/sdk'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
 import { Field } from '../../state/swap/actions'

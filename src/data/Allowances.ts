@@ -1,4 +1,4 @@
-import { Token, TokenAmount } from '@bscswap/sdk'
+import { Token, TokenAmount } from '@pepe-swap-libs/sdk'
 import { useMemo } from 'react'
 
 import { useTokenContract } from '../hooks/useContract'

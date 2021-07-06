@@ -1,4 +1,4 @@
-import { Trade } from '@bscswap/sdk'
+import { Trade } from '@pepe-swap-libs/sdk'
 import React, { Fragment, memo, useContext } from 'react'
 import { ChevronRight } from 'react-feather'
 import { Flex } from 'rebass'

@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@bscswap/sdk'
+import { Currency, ETHER, Token } from '@pepe-swap-libs/sdk'
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
