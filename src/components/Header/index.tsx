@@ -1,4 +1,4 @@
-import { ChainId } from '@pepe-swap-libs/sdk'
+import { ChainId } from '@godfatherpepe/sdk'
 import React from 'react'
 import { isMobile } from 'react-device-detect'
 import { Text } from 'rebass'
@@ -183,7 +183,7 @@ const NETWORK_LABELS: { [chainId in ChainId]: string | null } = {
   [ChainId.ROPSTEN]: 'Wrong Network',
   [ChainId.GÖRLI]: 'Wrong Network',
   [ChainId.KOVAN]: 'Wrong Network',
-  [ChainId.BSC_MAINNET]: null,
+  [ChainId.BSC_MAINNET]: "Binance Smart Chain Network",
   [ChainId.BSC_TESTNET]: 'Testnet'
 }
 

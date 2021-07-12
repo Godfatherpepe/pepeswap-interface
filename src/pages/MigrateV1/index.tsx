@@ -1,4 +1,4 @@
-import { JSBI, Token } from '@pepe-swap-libs/sdk'
+import { JSBI, Token } from '@godfatherpepe/sdk'
 import React, { useCallback, useContext, useMemo, useState, useEffect } from 'react'
 import { ThemeContext } from 'styled-components'
 import { AutoColumn } from '../../components/Column'

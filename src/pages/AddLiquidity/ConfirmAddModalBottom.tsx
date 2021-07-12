@@ -1,4 +1,4 @@
-import { Currency, CurrencyAmount, Fraction, Percent } from '@pepe-swap-libs/sdk'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@godfatherpepe/sdk'
 import React from 'react'
 import { Text } from 'rebass'
 import { ButtonPrimary } from '../../components/Button'

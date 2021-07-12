@@ -1,4 +1,4 @@
-import { Currency } from '@pepe-swap-libs/sdk'
+import { Currency } from '@godfatherpepe/sdk'
 import React from 'react'
 import styled from 'styled-components'
 import CurrencyLogo from '../CurrencyLogo'

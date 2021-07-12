@@ -1,4 +1,4 @@
-import { Currency, Pair } from '@pepe-swap-libs/sdk'
+import { Currency, Pair } from '@godfatherpepe/sdk'
 import React, { useState, useContext, useCallback } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import { darken } from 'polished'

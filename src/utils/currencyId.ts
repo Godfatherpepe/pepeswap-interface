@@ -1,4 +1,4 @@
-import { Currency, ETHER, Token } from '@pepe-swap-libs/sdk'
+import { Currency, ETHER, Token } from '@godfatherpepe/sdk'
 
 export function currencyId(currency: Currency): string {
   if (currency === ETHER) return 'BNB'

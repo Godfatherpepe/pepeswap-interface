@@ -1,4 +1,4 @@
-import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@pepe-swap-libs/sdk'
+import { ChainId, JSBI, Pair, Route, Token, TokenAmount, Trade, TradeType } from '@godfatherpepe/sdk'
 import { computeTradePriceBreakdown } from './prices'
 
 describe('prices', () => {

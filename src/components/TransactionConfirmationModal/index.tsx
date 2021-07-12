@@ -1,4 +1,4 @@
-import { ChainId } from '@pepe-swap-libs/sdk'
+import { ChainId } from '@godfatherpepe/sdk'
 import React, { useContext } from 'react'
 import styled, { ThemeContext } from 'styled-components'
 import Modal from '../Modal'

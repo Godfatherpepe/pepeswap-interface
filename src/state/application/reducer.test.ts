@@ -1,4 +1,4 @@
-import { ChainId } from '@pepe-swap-libs/sdk'
+import { ChainId } from '@godfatherpepe/sdk'
 import { createStore, Store } from 'redux'
 import { addPopup, removePopup, toggleSettingsMenu, toggleWalletModal, updateBlockNumber } from './actions'
 import reducer, { ApplicationState } from './reducer'

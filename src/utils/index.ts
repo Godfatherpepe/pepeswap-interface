@@ -3,9 +3,10 @@ import { getAddress } from '@ethersproject/address'
 import { AddressZero } from '@ethersproject/constants'
 import { JsonRpcSigner, Web3Provider } from '@ethersproject/providers'
 import { BigNumber } from '@ethersproject/bignumber'
-import { abi as IBSCswapRouter02ABI } from '@bscswap/contracts/build/IBSCswapRouter02.json'
+// import { abi as IBSCswapRouter02ABI } from '@bscswap/contracts/build/IBSCswapRouter02.json'
+import { abi as IBSCswapRouter02ABI } from '../constants/abis/pepe-router.json'
 import { ROUTER_ADDRESS } from '../constants'
-import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@pepe-swap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, CurrencyAmount, Currency, ETHER } from '@godfatherpepe/sdk'
 import { TokenAddressMap } from '../state/lists/hooks'
 
 // returns the checksummed address if the address is valid, otherwise returns false

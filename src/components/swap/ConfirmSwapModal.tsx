@@ -1,4 +1,4 @@
-import { currencyEquals, Trade } from '@pepe-swap-libs/sdk'
+import { currencyEquals, Trade } from '@godfatherpepe/sdk'
 import React, { useCallback, useMemo } from 'react'
 import TransactionConfirmationModal, {
   ConfirmationModalContent,

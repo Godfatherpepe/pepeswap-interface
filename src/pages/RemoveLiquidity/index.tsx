@@ -1,7 +1,7 @@
 import { splitSignature } from '@ethersproject/bytes'
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
-import { Currency, currencyEquals, ETHER, Percent, WETH } from '@pepe-swap-libs/sdk'
+import { Currency, currencyEquals, ETHER, Percent, WETH } from '@godfatherpepe/sdk'
 import React, { useCallback, useContext, useMemo, useState } from 'react'
 import { ArrowDown, Plus } from 'react-feather'
 import ReactGA from 'react-ga'
@@ -108,7 +108,6 @@ export default function RemoveLiquidity({
     const nonce = await pairContract.nonces(account)
 
     const deadlineForSignature: number = Math.ceil(Date.now() / 1000) + deadline
-
     const EIP712Domain = [
       { name: 'name', type: 'string' },
       { name: 'version', type: 'string' },
@@ -116,7 +115,7 @@ export default function RemoveLiquidity({
       { name: 'verifyingContract', type: 'address' }
     ]
     const domain = {
-      name: 'BSCswap LP Token',
+      name: 'Pepeswap LP',
       version: '1',
       chainId: chainId,
       verifyingContract: pair.liquidityToken.address
@@ -149,6 +148,7 @@ export default function RemoveLiquidity({
       .send('eth_signTypedData_v4', [account, data])
       .then(splitSignature)
       .then(signature => {
+        console.log('signature: ', signature);
         setSignatureData({
           v: signature.v,
           r: signature.r,

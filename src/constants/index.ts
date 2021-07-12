@@ -1,9 +1,9 @@
 import { AbstractConnector } from '@web3-react/abstract-connector'
-import { ChainId, JSBI, Percent, Token, WETH } from '@pepe-swap-libs/sdk'
+import { ChainId, JSBI, Percent, Token, WETH } from '@godfatherpepe/sdk'
 
 import { injected, binanceinjected } from '../connectors'
 
-export const ROUTER_ADDRESS = '0xb185c02c286Aaf26A162BcB9f2aaDE645ad306e5'
+export const ROUTER_ADDRESS = '0xe3843bb2883cbf20e11F2AFA7B1e6d247554d800'
 
 // a list of tokens by chain
 type ChainTokenList = {

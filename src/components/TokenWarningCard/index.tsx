@@ -1,4 +1,4 @@
-import { Currency, Token } from '@pepe-swap-libs/sdk'
+import { Currency, Token } from '@godfatherpepe/sdk'
 import { transparentize } from 'polished'
 import React, { useMemo } from 'react'
 import styled from 'styled-components'

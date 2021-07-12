@@ -1,5 +1,5 @@
 import React from 'react'
-import { Currency, Price } from '@pepe-swap-libs/sdk'
+import { Currency, Price } from '@godfatherpepe/sdk'
 import { useContext } from 'react'
 import { Repeat } from 'react-feather'
 import { Text } from 'rebass'

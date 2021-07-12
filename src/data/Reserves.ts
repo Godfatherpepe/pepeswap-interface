@@ -1,4 +1,4 @@
-import { TokenAmount, Pair, Currency } from '@pepe-swap-libs/sdk'
+import { TokenAmount, Pair, Currency } from '@godfatherpepe/sdk'
 import { useMemo } from 'react'
 import { abi as IBSCswapPairABI } from '@bscswap/contracts/build/IBSCswapPair.json'
 import { Interface } from '@ethersproject/abi'

@@ -1,4 +1,4 @@
-import { Currency, Token } from '@pepe-swap-libs/sdk'
+import { Currency, Token } from '@godfatherpepe/sdk'
 import React, { KeyboardEvent, useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { isMobile } from 'react-device-detect'
 import { useTranslation } from 'react-i18next'

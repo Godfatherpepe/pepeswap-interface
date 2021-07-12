@@ -1,4 +1,4 @@
-import { Currency, ETHER, JSBI, TokenAmount } from '@pepe-swap-libs/sdk'
+import { Currency, ETHER, JSBI, TokenAmount } from '@godfatherpepe/sdk'
 import React, { useCallback, useEffect, useState } from 'react'
 import { Plus } from 'react-feather'
 import { Text } from 'rebass'
