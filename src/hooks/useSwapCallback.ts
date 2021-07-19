@@ -145,9 +145,11 @@ export function useSwapCallback(
               parameters: { methodName, args, value },
               contract
             } = call
+            console.log(methodName, args);
             const options = !value || isZero(value) ? {} : { value }
             return contract.estimateGas[methodName](...args, options)
               .then(gasEstimate => {
+                console.log('gasEstimate: ', gasEstimate);
                 return {
                   call,
                   gasEstimate
@@ -155,7 +157,6 @@ export function useSwapCallback(
               })
               .catch(gasError => {
                 console.debug('Gas estimate failed, trying eth_call to extract error', call)
-
                 return contract.callStatic[methodName](...args, options)
                   .then(result => {
                     console.debug('Unexpected successful call after failed estimate gas', call, gasError, result)
@@ -171,7 +172,7 @@ export function useSwapCallback(
                           'This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance.'
                         break
                       default:
-                        errorMessage = `The transaction cannot succeed due to error: ${callError.reason}. This is probably an issue with one of the tokens you are swapping.`
+                        errorMessage = `The transaction cannot succeed due to error: ${callError.data.message.replace('execution reverted: ', '')}. This is probably an issue with one of the tokens you are swapping.`
                     }
                     return { call, error: new Error(errorMessage) }
                   })

@@ -3,7 +3,7 @@ import { ChainId, JSBI, Percent, Token, WETH } from '@godfatherpepe/sdk'
 
 import { injected, binanceinjected } from '../connectors'
 
-export const ROUTER_ADDRESS = '0xe3843bb2883cbf20e11F2AFA7B1e6d247554d800'
+export const ROUTER_ADDRESS = '0x363E483482CA949c24f31292C3C25615E7B8C554'
 
 // a list of tokens by chain
 type ChainTokenList = {

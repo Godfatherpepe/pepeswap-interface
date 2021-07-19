@@ -1723,10 +1723,10 @@
     "@ethersproject/properties" "^5.4.0"
     "@ethersproject/strings" "^5.4.0"
 
-"@godfatherpepe/sdk@^0.0.8":
-  version "0.0.8"
-  resolved "https://registry.yarnpkg.com/@godfatherpepe/sdk/-/sdk-0.0.8.tgz#c5c5aadcc11243493d5be4f9afae6af50cf62f09"
-  integrity sha512-oPJS9jxvlhulxUcPMl7ZhI3xdPtzxhYTZigPa8K+oyp8eixGg6Muhd4+VsxDd6WqyxyKKmLoZU2EdzjNVFIrqg==
+"@godfatherpepe/sdk@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@godfatherpepe/sdk/-/sdk-0.1.0.tgz#ca871bd0cd077b504eb2b5add3a294c0d1797517"
+  integrity sha512-uFCpuvz8kKWWJBlOvof8poyg3W4C/q2ONpR3Lo4RQ6Zk4lwDzSo8jcNbrCd7Owe4lTLkdwqaJgRtHhSFkm03LA==
   dependencies:
     "@bscswap/contracts" "1.0.2"
     big.js "^5.2.2"
